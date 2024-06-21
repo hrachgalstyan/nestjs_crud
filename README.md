@@ -66,6 +66,9 @@ munich_task/
 │             ├── products.module.ts
 │             ├── products.service.ts
 │       ├── index.ts
+│ ├── pipes/
+│       ├── index.ts
+│       ├── <pipe>.pipe.ts
 │ ├── responses/
 │       ├── index.ts
 │       ├── <response>.response.ts

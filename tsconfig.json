@@ -27,16 +27,12 @@
       "@Filters": ["src/filters"],
       "@Interfaces": ["src/interfaces"],
       "@Modules": ["src/modules"],
+      "@Pipes": ["src/pipes"],
       "@Modules/*": ["src/modules/*"],
       "@Responses": ["src/responses"],
       "@Swagger/*": ["src/swagger/*"],
       "@SwaggerEntities": ["src/swagger/entities"],
       "@Utils": ["src/utils"],
-//      "@Decorators": ["src/decorators"],
-//      "@Guards": ["src/guards"],
-//      "@Interceptors": ["src/interceptors"],
-//      "@Interfaces": ["src/interfaces"],
-//      "@CustomValidators": ["src/validators"],
     }
   }
 }

@@ -18,6 +18,7 @@ import {
   ApiTags,
 } from '@nestjs/swagger';
 
+import { LimitQueryValuePipe } from '@Pipes';
 import { PaginatedResponse } from '@Responses';
 import { ProductEntity } from '@SwaggerEntities';
 
@@ -36,11 +37,12 @@ export class ProductsController {
   @ApiOkResponse({ type: GetAllProductsEntity })
   @ApiQuery({ name: 'page', required: false, type: Number })
   @ApiQuery({ name: 'limit', required: false, type: Number })
-  @ApiQuery({ name: 'categoryId', required: true, type: Number })
+  @ApiQuery({ name: 'categoryId', required: false, type: Number })
   getAllProducts(
     @Query('page', new DefaultValuePipe(1), ParseIntPipe) page: number,
-    @Query('limit', new DefaultValuePipe(10), ParseIntPipe) limit: number,
-    @Query('categoryId', ParseIntPipe) categoryId: number,
+    @Query('limit', new DefaultValuePipe(15), ParseIntPipe, LimitQueryValuePipe)
+    limit: number,
+    @Query('categoryId') categoryId: number,
   ): Promise<PaginatedResponse<ProductEntity>> {
     return this.productsService.getAllProducts({ categoryId, page, limit });
   }

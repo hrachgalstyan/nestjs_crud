@@ -22,7 +22,9 @@ export class ProductsService {
     const offset = (page - 1) * limit;
 
     const { rows, count } = await this.productsRepository.findAndCountAll({
-      where: { categoryId },
+      where: {
+        ...(categoryId && { categoryId }),
+      },
       attributes: {
         exclude: ['categoryId'],
       },

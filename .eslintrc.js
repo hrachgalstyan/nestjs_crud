@@ -57,6 +57,7 @@ module.exports = {
                 '^(@Filters)(/.*|$)',
                 '^(@Interfaces)(/.*|$)',
                 '^(@Modules)(/.*|$)',
+                '^(@Pipes)(/.*|$)',
                 '^(@Responses)(/.*|$)',
                 '^(@Swagger)(/.*|$)',
                 '^(@SwaggerEntities)(/.*|$)',
