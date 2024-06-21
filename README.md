@@ -124,7 +124,7 @@ Before you start, make sure you have the following software installed:
 1. Clone this repository to your local machine:
 
    ```bash
-   $ git clone git@github.com:hrachgalstyan/postgres-rest.git
+   $ git clone https://github.com/hrachgalstyan/Munich_task.git
     ```
 
 2. Navigate to the project directory:
