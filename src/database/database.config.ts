@@ -14,9 +14,6 @@ export default (): DatabaseConfig => ({
     username: process.env.DATABASE_DEV_USERNAME,
     password: process.env.DATABASE_DEV_PASSWORD,
     database: process.env.DATABASE_DEV_NAME,
-    dialectOptions: {
-      multipleStatements: true,
-    },
     logging: process.env.DATABASE_DEV_LOGGING === 'true',
   },
   test: {
@@ -26,9 +23,6 @@ export default (): DatabaseConfig => ({
     username: process.env.DATABASE_TEST_USERNAME,
     password: process.env.DATABASE_TEST_PASSWORD,
     database: process.env.DATABASE_TEST_NAME,
-    dialectOptions: {
-      multipleStatements: true,
-    },
     logging: process.env.DATABASE_TEST_LOGGING === 'true',
   },
   production: {
@@ -38,9 +32,6 @@ export default (): DatabaseConfig => ({
     username: process.env.DATABASE_PROD_USERNAME,
     password: process.env.DATABASE_PROD_PASSWORD,
     database: process.env.DATABASE_PROD_NAME,
-    dialectOptions: {
-      multipleStatements: true,
-    },
     logging: process.env.DATABASE_PROD_LOGGING === 'true',
   },
 });

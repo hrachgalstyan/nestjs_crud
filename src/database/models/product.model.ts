@@ -6,7 +6,8 @@ import {
   Column,
   ForeignKey,
   Table,
-  Unique, Validate,
+  Unique,
+  Validate,
 } from 'sequelize-typescript';
 
 import { PRODUCT_TABLE_NAME } from '@Constants';
